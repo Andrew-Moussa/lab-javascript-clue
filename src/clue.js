@@ -109,23 +109,24 @@ function selectRandom(array) {
 // console.log(selectRandom(suspectsArray)) 
 
 function pickMystery() {
-  const mestery = {
+  const mystery = {
     suspect: selectRandom(suspectsArray),
     room: selectRandom(roomsArray),
     weapon: selectRandom(weaponsArray)
   }
 
 
-  return mestery
+  return mystery
 }
 
 // ITERATION 3
 
-function revealMystery(mestery) {
+function revealMystery(mystery) {
+  console.log(revealMystery)
+  const mysteryStatement = `${mystery.suspect.firstName} ${mystery.suspect.lastName} killed Mr. Boddy using the ${mystery.weapon.name} in the ${mystery.room.name}!`
 
 
-  return `${mestery.suspect.firstName} ${mestery.suspect.lastName} killed Mr.Boddy using the ${mestery.weapon.name} in the ${mestery.room.name}!`
-  Victor Plum killed Mr.Boddy using the poison in the room Billiard Room!' to equal 'Victor Plum killed Mr.Boddy using the poison in the Billiard Room!'.
+  return mysteryStatement
 
 }
 
